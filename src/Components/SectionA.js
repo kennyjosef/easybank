@@ -18,7 +18,7 @@ const Content = () => {
                 </div>
                 
             </div>
-            <div>
+            <div className='items2'>
                 <img src={Logo2} className="pic" alt="pic"/>
             </div>
         </div>

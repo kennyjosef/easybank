@@ -10,37 +10,54 @@
     
 }
 
-.link{
-    margin-left: 20px;
+.navbarItems{
+    height: 110px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 80%;
+    margin: auto;
+    
 }
-
-.forul{
+.navbar-logo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    font-weight: 400;
+}
+.nav-menu{
     list-style: none; 
     display: flex;
     justify-content:center;
     padding: 10px;
     border: 10px;
 }
-li a {
+.nav-link{
     text-decoration: none;
     padding: 10px;
     color:  hsl(220, 13%, 13%);
     font-size: 16px;
     font-family: 'Kumbh Sans', sans-serif;
     cursor: pointer;
-    
 }
-li a:hover{
+.nav-link:hover{
     color: chocolate;
+    border-bottom: 1px solid chocolate;
 }
-
-li {
-    text-decoration: none;
-    padding: 10px;
-    color:  hsl(220, 13%, 13%);
-    font-size: 16px;
-    font-family: 'Public Sans', sans-serif;
+.nav-link-mobile{
+    display: none;
+}
+.active{
+    opacity: 1;
+}
+.fa-bars,
+.fa-times{
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
 }
 button{
     border-radius: 50px;
@@ -191,6 +208,7 @@ button{
 
     
 /* for footer */
+
 .foot{
     display: flex;
     margin: auto;
@@ -204,8 +222,22 @@ button{
 }
 .footItem{
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+}
+.footerLink{
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+}
+ .footerLink li{
+    list-style: none;
+    line-height: 2rem;
+    font-family:'Public Sans', sans-serif
+}
+.easy{
+    padding-left: 15px;
 }
 .footItem1{
     display: flex;
@@ -218,25 +250,14 @@ button{
     cursor: pointer;
      
 }
-.footul{
-    list-style: none; 
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    padding: 2 0px;
-    border: 10px;
-    
-}
-.footul li a{
-    color: white;
-    font-family:'Public Sans', sans-serif ;    
-}
 .footItems{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
-
+.footItems p{
+    padding-top: 2rem;
+} 
 
 /* RESPONSIVENESS FOR SECTIONC */
 @media(max-width: 1165px){
@@ -284,6 +305,16 @@ button{
         font-size: 17px;
     }
 }
+@media (max-width:1005px){
+    .navbarItems{
+        width: 100%;
+    }
+    .nav-link{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+}
 /* RESPONSIVENESS FOR SECTIONB */
 @media (max-width:920px){
     .container{
@@ -308,6 +339,49 @@ button{
         
     }
 }
+@media(max-width: 800px){
+    .nav-menu{
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    width: 50vw;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    transition: .5s ease-in-out;
+    transform: translateX(-500px);
+    z-index: 10;
+    }
+
+    .nav-menu.active{
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(-10px);
+        opacity: .9;
+    }
+
+    .navbarItems {
+        justify-content: space-between;
+        padding: 0 4rem;
+    }
+
+    .fa-bars,
+    .fa-times{
+        display: block;
+        z-index: 10000000;
+    }
+    .navbtn{
+        display: none;
+    }
+    .nav-link{
+        color: #fff;
+        font-size: 18px;
+    }
+}
 /* RESPONSIVENESS FOR SECTION A */
 @media (max-width:750px){
     .section{
@@ -321,6 +395,7 @@ button{
         align-items: center ;
         justify-content: center;
     }
+    
     .items h3{
         text-align: center;
     }
@@ -335,7 +410,6 @@ button{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
     }
     .footItem1{
         display: flex;
@@ -350,21 +424,37 @@ button{
         flex-direction: column;
         justify-content: space-evenly;
         padding-bottom: 2rem;
-
     }
+    
     .footul{
         align-items: center;
+        list-style: none; 
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        padding: 2 0px;
+        border: 10px;
+        text-decoration: none;    
+    }
+    .footul li{
+        text-decoration: none;
+        padding: 1rem;
+        font-size: 18px;
     }
     .footItems{
         align-items: center;
         justify-content: space-evenly;
         padding-bottom: 2rem;
+        padding-right: 1rem;
     }
     .footItems p{
-        padding-top: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
-
+    .easy img{
+        padding-right: 2rem;
+    }
 }
 
 

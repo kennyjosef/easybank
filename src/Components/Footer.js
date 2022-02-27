@@ -6,13 +6,15 @@ import Logo13 from "../Assest/logo13.svg";
 import Logo14 from "../Assest/logo14.svg";
 import Logo15 from "../Assest/logo15.svg";
 import Logo16 from "../Assest/logo16.svg";
+// import "./StyleFoot.css";
+ 
 
 const Footer = () => {
     return ( 
         <div className="foot">
             <div className="footItem">
                 <div className="footItem1">
-                    <div>
+                    <div className="easy">
                         <img src={Logo11} alt="pic"/>
                     </div>
                     <div  className="img">
@@ -23,19 +25,20 @@ const Footer = () => {
                         <img src={Logo16} alt="pic"/>
                     </div>
                 </div>
-                <div>
-                    <ul className="footul">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
+                
+                <div className="footul">
+                    <ul className="footerLink" >
+                        <li>About</li>
+                        <li>Contact</li>
+                        <li>Blog</li>
                     </ul>
                     
                 </div>
-                <div>
-                    <ul className="footul">
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Private Policy</a></li>
+                <div className="footul">
+                    <ul className="footerLink" >
+                        <li>Careers</li>
+                        <li>Support</li>
+                        <li>Private Policy</li>
                     </ul>
                 </div>
 
