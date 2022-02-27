@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Content from './Components/SectionA';
 import ContentB from './Components/SectionB';
 import Article from './Components/SectionC';
-import About from './Components/About';
+
 
 
 function App() {
