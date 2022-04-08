@@ -3,6 +3,7 @@ import {MenuItems} from './MenuItem';
 import Button from "./Button";
 import Logo1 from "../Assest/logo.svg";
 import './style.css';
+
 class Navbar extends Component{
     state={clicked:false}
     handleClick=()=>{

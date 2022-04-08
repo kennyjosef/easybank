@@ -18,7 +18,7 @@ const Content = () => {
                         typeSpeed={70}
                         delaySpeed={50}
                         delaySpeed={1000}
-                        words={["banking", "marketing", "business", "networking"]}/>
+                        words={["banking,", "marketing,", "business,", "networking."]}/>
                     </span>
                 </h3>
                 <p>Take your financial life online. Your Easybank account will be
