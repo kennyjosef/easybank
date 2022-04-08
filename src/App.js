@@ -12,11 +12,11 @@ function App() {
     
     <div className="App">
       <Router>
-            <Navbar/>
-            <Routes>
-                <Route exact path='/' element={Home}/>  
-            </Routes>
-                <Footer/>
+        <Navbar/>
+          <Routes>
+            <Route exact path='/' element={Home}/>  
+          </Routes>
+        <Footer/>
       </Router>
     </div>
    
