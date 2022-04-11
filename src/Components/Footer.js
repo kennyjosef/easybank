@@ -6,7 +6,6 @@ import Logo13 from "../Assest/logo13.svg";
 import Logo14 from "../Assest/logo14.svg";
 import Logo15 from "../Assest/logo15.svg";
 import Logo16 from "../Assest/logo16.svg";
-// import "./StyleFoot.css";
  
 
 const Footer = () => {

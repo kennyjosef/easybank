@@ -91,6 +91,9 @@ button{
    
 
 }
+.section p{
+    line-height: 2rem;
+}
 .items{
     display: flex;
     flex-direction: column;

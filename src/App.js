@@ -3,22 +3,29 @@ import './App.css';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
 import Navbar from './Components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-
-
+import Contact from './Components/Contact';
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SignUp from './Components/Signup';
+import SignIn from './Components/SignIn';
+import About from './Components/About';
+import Profile from './Components/Profile';
 function App() {
-  return (
-    
+  return ( 
+    <Router>
     <div className="App">
-      <Router>
         <Navbar/>
-          <Routes>
-            <Route exact path='/' element={Home}/>  
-          </Routes>
-        <Footer/>
-      </Router>
+        <Routes>
+          <Route exact path='/' element={<Home/>} />
+          <Route exact path='/contact' element={<Contact/>} />
+          <Route exact path='/about' element={<About/>} />
+          <Route exact path='/signup' element={<SignUp/>} />
+          <Route exact path='/signIn' element={<SignIn/>} />
+          <Route exact path='/profile' element={<Profile/>} />
+
+        </Routes>
+        <Footer/>     
     </div>
+    </Router>
    
     
   );
