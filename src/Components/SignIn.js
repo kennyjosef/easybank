@@ -69,7 +69,7 @@ class SignIn extends Component{
 
                         <label htmlFor='password'></label>
                         <input  className={classes.email}
-                        type="text" id="password" onChange={this.handleChangePassword}
+                        type="password" id="password" onChange={this.handleChangePassword}
                         placeholder="  Password" required/>
 
                         <label htmlFor='phone'></label>
